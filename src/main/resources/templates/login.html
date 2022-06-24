@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form style="text-align:center;" method="post" action="/login" th:object="${loginRequest}">
+        <h3>Please sign in</h3>
+        <input type="text" name="email" placeholder='e-mail'></input><br/><p></p>
+        <input type="text" name="password" placeholder='Password'></input><br/>
+        <p></p>
+        <input type="submit" name="sign-in" value="sign-In"></button>
+       </form>
+    </div>
+</body>
+</html>

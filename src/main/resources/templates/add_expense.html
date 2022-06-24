@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form">
+       <p style="color:red"><b th:text="${anyerror}"></b></p>
+        <form method="post",action="/addexpense",th:object="${newexpense}">
+          <h2>Add Expense</h2>
+          <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="number" name="expense_id" placeholder="Expense Id" required>
+          </div>
+          <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="date" placeholder=" Date" required>
+          </div>
+          <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="description" placeholder="Description" required>
+          </div>
+          <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="location" placeholder="Location" required>
+          </div>
+          <div class="input-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="int" name="categoryid" placeholder="Cateogory Id" required>
+          </div>
+
+            <input  style ="color:blue; background-color: brown;"type="submit" name="add-expense" value="ADD">
+
+          </div>
+          </div>
+          
+        </div>
+       
+
+      </div>
+       
+
+
+
+    </form>
+      </div>
+    
+</body>
+</html>
